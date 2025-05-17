@@ -1,0 +1,399 @@
+body {
+    background-color: #eee !important;
+}
+
+.not-found {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TOP NAV */
+.top-nav {
+    height: 10vh;
+    background-color: #1f1f1f;
+}
+
+.top-nav-item {
+    font-size: 13px !important;
+    
+}
+
+.top-nav-item-text {
+    text-decoration: none;
+}
+
+.top-nav-item-icon:hover, .top-nav-item-text:hover {
+    color: rgba(var(--bs-info-rgb)) !important;
+}
+
+/* MAIN NAV */
+.navbar {
+    height: 20vh;
+}
+
+.navbar-logo {
+    max-height: 20vh;
+    width: auto;
+}
+
+.nav-item.active .nav-link {
+    color: rgba(var(--bs-info-rgb)) !important;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgba(var(--bs-info-rgb), 1);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* HOME BANNER */
+.carousel-item {
+    position: relative;
+    height: 70vh;
+}
+
+.carousel-image-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    z-index: 2;
+}
+
+.carousel-caption .text-light {
+    color: white;
+}
+
+.carousel-caption h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
+}
+
+.guide-image {
+    height: 320px !important;
+}
+
+/* DESTINATIONS */
+.hero-container {
+    height: 70vh;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.circle-item {
+    width: 300px;  
+    height: 300px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle-item .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.circle-item h1 {
+    z-index: 1;
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.3s ease-in-out;
+}
+
+.circle-item:hover {
+    transform: scale(1.1);
+}
+
+.circle-item:hover .overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.circle-item:hover h1 {
+    color: #ffcc00;
+}
+
+/* DESTINATION DETAIL */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.text-justify {
+    text-align: justify !important;
+}
+
+/* Auth */
+.profile {
+    background: linear-gradient(to bottom right, #00aaff, #66ccff, #1c85ee);
+}
+
+.upload-overlay {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); 
+    opacity: 0; 
+    transition: 0.3s; 
+    cursor: pointer;
+}
+
+.profile-picture-container:hover .upload-overlay {
+    opacity: 1;
+}
+
+.profile-picture {
+    opacity: 0; 
+    cursor: pointer;
+}
+
+/* Footer */
+.footer a:hover {
+    color: #adb5bd !important;
+    text-decoration: underline !important;
+}
+
+.footer .social-icons a {
+    font-size: 200px;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #adb5bd;
+}
+
+/* Why us */
+.us-container .card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
+.us-container .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+.us-container .card-body p {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Team */
+.guide-container .card {
+    box-shadow: 10px 10px 20px #333 !important;
+}
+
+.guide-container .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.guide-container .card-body a {
+    font-size: 0.9rem;
+}
+
+.guide-container .card-body a:hover {
+    color: #007bff !important;
+}
+
+.guide-container .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+/* Package */
+.package-container .badge-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.package-container .badge-container .badge {
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+}
+
+.package-container .card-img-top {
+    height: 160px;
+    object-fit: cover;
+}
+
+.package-container .card-body {
+    padding: 0.25rem;
+}
+
+.package-container .card-title {
+    font-size: 0.9rem;
+}
+
+.package-container .card-body p {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.package-container .card-body .btn {
+    font-size: 0.75rem;
+}
+
+.rating {
+    direction: rtl;
+    display: inline-flex;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 1.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f39c12;
+}
+.rating input:checked ~ label {
+    color: #f39c12;
+}
+
+.rating label {
+    unicode-bidi: bidi-override;
+    direction: ltr;
+}
+
+.package-container .circle-item {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.package-container .circle-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* Booking */
+.popup {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.person-selection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person-selection button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[id="open-popup"]:checked ~ .popup {
+    display: flex;
+}
+
